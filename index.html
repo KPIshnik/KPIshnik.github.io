@@ -11,7 +11,9 @@
 	.then(response => response.json())
 	.then(result => console.log(result))
 
-	fetch("https://api.privatbank.ua/p24api/infrastructure?json&tso&address=&city=%D0%94%D0%BD%D0%B5%D0%BF%D1%80")
+	fetch("https://api.privatbank.ua/p24api/infrastructure?json&tso&address=&city=%D0%94%D0%BD%D0%B5%D0%BF%D1%80, {
+  mode: 'no-cors'
+}")
 	.then(response => response.json())
 	.then(result => console.log(result))
 	.catch(err => console.log(err))
