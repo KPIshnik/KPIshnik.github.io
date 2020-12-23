@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Api</title>
-</head>
-<body>
-<script type="text/javascript">
-	/*let res = `В терминале ${TerminalId} который находится по ${address} на долготе и широте ${lat}:${len} курс на сегодняшнюю дату ${date} составляется USD/UAH ${exchange}`*/
-
-	fetch("https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11")
-	.then(response => response.json())
-	.then(result => console.log(result))
-
-	fetch("https://api.privatbank.ua/p24api/infrastructure?json&tso&address=&city=%D0%94%D0%BD%D0%B5%D0%BF%D1%80, {
-  mode: 'no-cors'
-}")
-	.then(response => response.json())
-	.then(result => console.log(result))
-	.catch(err => console.log(err))
-
-
-</script>
-
-</body>
+  <head>
+    <title>Api</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let div = document.createElement("div");
+      div.innerHTML = "Aloha";
+      document.body.append(div);
+    </script>
+  </body>
 </html>
